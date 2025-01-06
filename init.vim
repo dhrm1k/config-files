@@ -26,7 +26,6 @@ Plug 'http://github.com/tpope/vim-surround' " Surrounding ysw)
 Plug 'https://github.com/ryanoasis/vim-devicons' " Developer Icons
 Plug 'https://github.com/ap/vim-css-color' " CSS Color Preview
 Plug 'https://github.com/rafi/awesome-vim-colorschemes' " Retro Scheme
-Plug 'ycm-core/YouCompleteMe'
 Plug 'https://github.com/neoclide/coc.nvim' "Auto Completion
 Plug 'vimwiki/vimwiki'
 call plug#end()
