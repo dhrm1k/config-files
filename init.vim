@@ -108,6 +108,7 @@ Plug 'rafi/awesome-vim-colorschemes' " Retro Scheme
 Plug 'vimwiki/vimwiki'               " VimWiki
 Plug 'sbdchd/neoformat'              " Code formatting
 Plug 'github/copilot.vim'            " GitHub Copilot for Vim
+Plug 'goolord/alpha-nvim'		 " Dashboard	
 call plug#end()
 
 " Colorscheme
@@ -121,4 +122,48 @@ hi VertSplit guibg=NONE ctermbg=NONE
 hi EndOfBuffer guibg=NONE ctermbg=NONE
 hi StatusLine guibg=NONE ctermbg=NONE
 hi StatusLineNC guibg=NONE ctermbg=NONE
+
+
+
+
+lua << EOF
+local alpha = require("alpha")
+local dashboard = require("alpha.themes.dashboard")
+
+-- ASCII Art Header
+dashboard.section.header.val = {
+[[  _   _ _____  ______ _   _   ___  _________  ________ _   __]],
+[[| | | |_   _| |  _  \ | | | / _ \ | ___ \  \/  |_   _| | / / ]],
+[[| |_| | | |   | | | | |_| |/ /_\ \| |_/ / .  . | | | | |/ /  ]],
+[[|  _  | | |   | | | |  _  ||  _  ||    /| |\/| | | | |    \  ]],
+[[| | | |_| |_  | |/ /| | | || | | || |\ \| |  | |_| |_| |\  \ ]],
+[[\_| |_/\___/  |___/ \_| |_/\_| |_/\_| \_\_|  |_/\___/\_| \_/ ]],
+[[]],                                                            
+                                                                                            
+
+	}
+
+-- Menu Buttons
+dashboard.section.buttons.val = {
+  dashboard.button("e", "  New file", ":ene <BAR> startinsert<CR>"),
+  dashboard.button("f", "󰈞  Find file", ":Telescope find_files<CR>"),
+  dashboard.button("r", "  Recent files", ":Telescope oldfiles<CR>"),
+  dashboard.button("s", "  Restore session", ":SessionManager load_session<CR>"),
+  dashboard.button("q", "  Quit", ":qa<CR>"),
+}
+
+-- Footer
+-- dashboard.section.footer.val = { "⚡ Neovim loaded. Happy Hacking!" }
+dashboard.section.footer.val = {
+  "",
+  "              You have to be always drunk. That’s all there is to it—it’s the only way.",
+  "        So as not to feel the horrible burden of time that breaks your back and bends",
+  "                          you to the earth, you have to be continually drunk.",
+	}
+
+
+
+-- Set dashboard
+alpha.setup(dashboard.opts)
+EOF
 
