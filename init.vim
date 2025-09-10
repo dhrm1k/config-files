@@ -68,12 +68,12 @@ nnoremap <Leader>gf :VimwikiRebuildIndex<CR>
 " VimWiki configuration
 "
 " HTML-generating Wiki: Uncomment this block to enable HTML generation
-let g:vimwiki_list = [{
-    \ 'path': '~/vimwiki/webwiki/',
-    \ 'syntax': 'default',
-    \ 'ext': '.wiki',
-    \ 'path_html': '~/from-my-github/dhrm1k.github.io/vimwiki_html/'
-    \ }]
+" let g:vimwiki_list = [{
+"   \ 'path': '~/vimwiki/webwiki/',
+"   \ 'syntax': 'default',
+"   \ 'ext': '.wiki',
+"   \ 'path_html': '~/from-my-github/dhrm1k.github.io/vimwiki_html/'
+"   \ }]
 
 " Regular diary: Uncomment this block to enable the simple diary version
 " let g:vimwiki_list = [{
@@ -92,9 +92,13 @@ let g:vimwiki_list = [{
 "
 
 " VimWiki HTML headers/footers
-let g:vimwiki_html_header = '~/vimwiki/header.html'
-let g:vimwiki_html_footer = '~/vimwiki/footer.html'
+" let g:vimwiki_html_header = '~/vimwiki/header.html'
+" let g:vimwiki_html_footer = '~/vimwiki/footer.html'
 
+let g:vimwiki_list = [
+      \ {'path': '~/webwiki/', 'syntax': 'default', 'ext': '.wiki'},
+      \ {'path': '~/private_wiki/', 'syntax': 'markdown', 'ext': '.md'},
+      \ ]
 
 " Plugins
 call plug#begin()
