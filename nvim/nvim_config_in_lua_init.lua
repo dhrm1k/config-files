@@ -1,3 +1,5 @@
+-- i don't use it. i prefer vimscript. this is a big just in case.
+
 print(">^.^<")
 
 

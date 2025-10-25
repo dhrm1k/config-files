@@ -1,0 +1,31 @@
+==== dharmik's personal logs ====
+
+=== LEGEND ===
+- Links I want to revisit later are prefixed with a dash (-)
+- Tags are added at the end of each link for easy categorization
+- Tags are enclosed in square brackets [] and separated by commas
+- Dates are in YYYY-MM-DD format
+- '#' indicates my personal notes or comments about the link
+=================
+
+=== ALL TAGS ===
+[to_read]
+[to_watch]
+[to_try]
+[networking]
+[reddit]
+[blog]
+[movie]
+[book]
+[vim]
+[programming]
+[read]
+[watched]
+[tried]
+[job_posting]
+[history]
+[to_do]
+=================
+
+=== LOGS ===
+
